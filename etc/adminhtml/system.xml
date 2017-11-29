@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="emipro" translate="label" sortOrder="200">
+            <label>Emipro</label>
+        </tab>
+        
+        <section id="emipro_ssh" translate="label" type="text" sortOrder="910" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>SSH Commander</label>
+            <tab>emipro</tab>
+            <resource>Magento_Backend::advanced</resource>
+            <group id="git" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Emipro SSH setting</label>
+
+                <field id="git_active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="0">
+                        <label>Git</label>
+                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                 <field id="repourl" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="0">
+                        <label>Git Repository URL</label>
+                        <comment><![CDATA[For Ex : https://xxx@bitbucket.org/xxx/xxx.git]]></comment>
+                        <validate>required-entry</validate>
+                        <depends>
+                            <field id="git_active">1</field>
+                        </depends>
+                </field>
+                <field id="gituser" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="0">
+                        <label>Git User</label>
+                        <validate>required-entry</validate>
+                        <depends>
+                            <field id="git_active">1</field>
+                        </depends>
+                </field>
+                <field id="gitpassword" translate="label" type="password" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="0">
+                        <label>Git Password</label>
+                        <validate>required-entry</validate>
+                        <depends>
+                            <field id="git_active">1</field>
+                        </depends>
+                </field>
+                <field id="gitdirectory" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="0">
+                        <label>Git Directory</label>
+                        <validate>required-entry</validate>
+                        <depends>
+                            <field id="git_active">1</field>
+                        </depends>
+                </field>
+                <field id="branch" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="0">
+                        <label>Git Branch</label>
+                        <validate>required-entry</validate>
+                        <depends>
+                            <field id="git_active">1</field>
+                        </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

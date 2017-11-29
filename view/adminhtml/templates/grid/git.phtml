@@ -1,0 +1,16 @@
+<select id="emi_ssh_select_git" class="emi_ssh_select">
+<option value="">--- Please Select Action ---</option>
+<option value="gitstatus">Git Status</option>
+<!-- <option value="gitadd">Git Add</option>
+<option value="gitcommit">Git Commit</option> -->
+<!-- <option value="gitcheckout">Git Checkout</option>
+<option value="gitcheckoutbranch">Git Checkout Branch</option>
+ --><!-- <option value="gitpush">Git Push</option> -->
+<option value="gitpull">Git Pull</option>
+<option value="gitbranchlist">Git Branch List</option>
+<option value="gitemail">Add Email</option>
+<option value="gitname">Add Name</option>
+</select>
+<span id="confirm_init_git_ssh" class="action-default">Proceed</span>
+<script type="text/javascript">var emi_URL_git = '<?php echo $block->getGitUrl() ?>';</script>
+<div><iframe id="iframeIDGit" src="" onload="scrollbottom('iframeIDGit')"></iframe></div>

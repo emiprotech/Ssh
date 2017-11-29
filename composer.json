@@ -1,0 +1,15 @@
+{
+    "name": "emipro/ssh",
+    "description": "Emipro SSH Commander for Magento 2",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "https://shop.emiprotechnologies.com/license-agreement/"
+    ],
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Emipro\\Ssh\\": ""
+        }
+    }
+}

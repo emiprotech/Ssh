@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+<menu>
+
+    <add id="Emipro_Ssh::emipro_Ssh" title="Emipro-SSH Commander" module="Magento_Backend" sortOrder="90" parent="Magento_Backend::system_tools" action="ssh/grid/new" resource="Emipro_Ssh::emipro_Ssh"/>
+
+</menu>
+</config>

@@ -1,0 +1,45 @@
+<select id="emi_ssh_select_mag" onchange="customcommand(this.value)" class="emi_ssh_select">
+<option value="">--- Please Select Action ---</option>
+<optgroup label="Indexing">
+<option value="reindex">Re-index</option>
+<option value="design_config_grid">Re-index  Design Config Grid</option>
+<option value="customer_grid">Re-index  Customer Grid</option>
+<option value="catalog_category_product">Re-index Category Products</option>
+<option value="catalog_product_category">Re-index Product Categories</option>
+<option value="catalog_product_price">Re-index Product Price</option>
+<option value="catalog_product_attribute">Re-index Product EAV</option>
+<option value="cataloginventory_stock">Re-index Stock</option>
+<option value="catalogrule_rule">Re-index Catalog Rule Product</option>
+<option value="catalogrule_product">Re-index Catalog Product Rule</option>
+<option value="catalogsearch_fulltext">Re-index Catalog Search</option>
+<option value="indexinfo">Index Info</option>
+<option value="indexstatus">Index Status</option>
+</optgroup>
+<optgroup label="Caching">
+<option value="clean">Cache Clean</option>
+<option value="flush">Cache Flush</option>
+<option value="status">Cache Status</option>
+<option value="enable">Cache Enable</option>
+<option value="disable">Cache Disable</option>
+</optgroup>
+<optgroup label="Development">
+<option value="upgrade">Setup Upgrade</option>
+<option value="upgradekeep">Setup Upgrade Keep Generated</option>
+<option value="deploy">Static Content Deploy</option>
+<option value="customcommand">Static Content Deploy Locale Based</option>
+<option value="modeshow">Check Current Mode</option>
+</optgroup>
+<!-- <option value="deployadmin">Static Content Deploy For Backend</option>
+
+<option value="modedeve">Developer Mode Set</option>
+<option value="modeprod">Production Mode Set</option>
+<option value="dicompile">Di Compile</option>
+<option value="var">Var Clean</option>
+<option value="generation">Generation Clean</option> -->
+<!-- <option value="customcommand">Custom Command</option> -->
+
+</select>
+<input type="text" name="custom" id="custom_ssh_command" style="display: none;" onkeypress="return event.keyCode != 13;" placeholder="en_US">
+<span id="confirm_init_mag_ssh" class="action-default">Proceed</span>
+<script type="text/javascript">var emi_URL = '<?php echo $block->getMagentoUrl() ?>';</script>
+<div><iframe id="iframeID" src="" onload="scrollbottom('iframeID')" scrolling="auto"></iframe></div>
