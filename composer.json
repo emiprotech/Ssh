@@ -9,9 +9,6 @@
             "type": "git",
         }
     ],
-    "require": {
-        "emipro/ssh": "@dev"
-    },
     "autoload": {
         "files": [ "registration.php" ],
         "psr-4": {
