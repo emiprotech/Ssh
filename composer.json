@@ -4,6 +4,12 @@
     "type": "magento2-module",
     "version": "1.0.0",
     "license": ["OSL-3.0"],
+    "repositories": [
+       {
+         "type": "vcs",
+         "url": "https://github.com/emiprotech/ssh/"
+       }
+     ],
     "autoload": {
         "files": [ "registration.php" ],
         "psr-4": {
