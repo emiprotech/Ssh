@@ -10,6 +10,7 @@
          "url": "https://github.com/emiprotech/ssh/"
        }
      ],
+    "minimum-stability": "dev",
     "autoload": {
         "files": [ "registration.php" ],
         "psr-4": {
