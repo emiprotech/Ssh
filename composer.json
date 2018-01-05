@@ -6,7 +6,8 @@
     "repositories": [
         {
             "url": "https://github.com/emiprotech/ssh.git",
-            "type": "git"
+            "type": "git",
+            "reference": "dev-master"
         }
     ],
     "require-dev": {
