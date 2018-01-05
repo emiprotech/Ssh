@@ -9,10 +9,12 @@
             "type": "git",
         }
     ],
+    "require": {
+        "emipro/ssh": "1.0.0"
+    },
     "require-dev": {
         "emipro/ssh": "dev-master"
     },
-    "minimum-stability": "dev-master",
     "autoload": {
         "files": [ "registration.php" ],
         "psr-4": {
