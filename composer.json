@@ -7,13 +7,12 @@
         {
             "url": "https://github.com/emiprotech/ssh.git",
             "type": "git",
-            "reference": "dev-master"
         }
     ],
     "require-dev": {
         "emipro/ssh": "dev-master"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev-master",
     "autoload": {
         "files": [ "registration.php" ],
         "psr-4": {
