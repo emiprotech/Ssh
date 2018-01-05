@@ -9,6 +9,9 @@
             "type": "git"
         }
     ],
+    "require-dev": {
+        "emipro/ssh": "master"
+    }
     "minimum-stability": "stable",
     "autoload": {
         "files": [ "registration.php" ],
