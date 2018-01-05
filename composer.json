@@ -10,7 +10,7 @@
         }
     ],
     "require-dev": {
-        "emipro/ssh": "master"
+        "emipro/ssh": "dev-master"
     }
     "minimum-stability": "stable",
     "autoload": {
