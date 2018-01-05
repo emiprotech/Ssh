@@ -10,10 +10,7 @@
         }
     ],
     "require": {
-        "emipro/ssh": "1.0.0"
-    },
-    "require-dev": {
-        "emipro/ssh": "dev-master"
+        "emipro/ssh": "@dev"
     },
     "autoload": {
         "files": [ "registration.php" ],
