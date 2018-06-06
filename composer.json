@@ -8,8 +8,9 @@
         "AFL-3.0"
     ],
     "require": {
-        "php": "~5.6.5 || >=7.0"
+        "emipro/ssh": "dev-master"
     },
+    
     "autoload": {
         "files": [ "registration.php" ],
         "psr-4": {
